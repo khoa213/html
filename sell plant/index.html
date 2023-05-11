@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    body {
+  margin: 0 auto;
+  background-color: lightgrey;
+}
+.wrapper {
+  background-color: white;
+  padding: 30px 70px;
+}
+
+ul {
+  text-align: center;
+}
+#content {
+  overflow: auto;
+}
+
+.column1, .column2, .column3 {
+  width: 31.3%;
+  float: left;
+}
+
+.column1 {
+  float: left;
+}
+.column2 {
+  margin: 0% 3%;
+}
+.column3 {
+  float: right;
+  margin: 0%;
+}
+
+
+li {
+  display: inline;
+  padding: 0.5em;
+}
+
+.banner, .article {
+  background-color: #7FFFD4;
+  height: 10em;
+  margin-bottom: 1em;
+  border-radius: 10px;
+  padding-bottom: 100px;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="header">
+        <ul class="nav">
+          <li class="logo">KhoaFarm</li>
+          <li><a class="nav-link" href="" style="color: black;font-weight: bold;">Home</a></li>
+          <li><a class="nav-link" href="" style="color: gray;">Products</a></li>
+          <li><a class="nav-link" href="" style="color: gray;">Contact</a></li>
+        </ul>
+        <ul class="top-icon">
+          <li ><img class="image-icon" src="shopping-cart-icon.svg" alt=""></li>
+          <li><img class="image-icon" src="person.svg" alt=""></li>
+          <li style="font-size: 20px;">|</li>
+          <li><img class="image-icon" src="option.svg" alt=""></li>
+        </ul>
+    </div>
+    <div id="content">
+      <div class="banner">
+        <div class="banner-left">
+          <div class="b-l-text1">
+            Buy your dream plant
+          </div>
+          <div class="b-l-text2">
+            <div class="b-l-text2-left">
+              <p class="b-l-text2-char">50+</p>
+              <p class="b-l-text2-char">Plant species</p>
+            </div>
+            <div class="b-l-text2-right">
+              <p class="b-l-text2-char">100+</p>
+              <p class="b-l-text2-char">Customer</p>
+            </div>
+          </div>
+          <div class="search-bar">
+            <form class="form-search" action="">
+              <input type="text" placeholder="What are you looking for?">
+            </form>
+            <div class="search-icon">
+              <img src="searchicon.svg" alt="">
+            </div>
+          </div>
+          
+        </div>
+        <div class="banner-right">
+          
+          <div class="b-r-image">
+          <div class="b-r-image1">
+            <img src="circle.svg" style="width: 200px;height: 200px;" alt="">
+            <div class="b-r-image2">
+              <img src="plant.svg" alt="" style="width: 150px;height: 300px;">
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="banner" style="background-color: white; height: 800px;">
+        <div class="best-sell-left">
+          <p style="font-size: 30px;font-weight: bold;">Best Selling Plants</p>
+          <p style="color: grey;font-size: 20px;">Easiest way to healthy life by buying your favorite plants</p>
+          <button style="background-color: aquamarine; padding: 15px 50px 15px 15px;">See more</button>
+        </div>
+        <div class="best-sell-right">
+          <div class="b-s-r-1">
+            <img src="plant1.svg" alt="">
+            <p>Natural plants</p>
+            <p>140.000</p>
+          </div>
+          <div class="b-s-r-1">
+            <img src="plant2.svg" alt="">
+            <p>Artificial plants</p>
+            <p>900.000</p>
+          </div>
+          <div class="b-s-r-2">
+            <img src="plant3.svg" alt="">
+            <p>Artificial plants</p>
+            <p>35.000</p>
+          </div>
+          <div class="b-s-r-1">
+            <img src="plant1.svg" alt="">
+            <p>Natural plants</p>
+            <p>140.000</p>
+          </div>
+          <div class="b-s-r-1">
+            <img src="plant2.svg" alt="">
+            <p>Artificial plants</p>
+            <p>900.000</p>
+          </div>
+          <div class="b-s-r-2">
+            <img src="plant3.svg" alt="">
+            <p>Artificial plants</p>
+            <p>35.000</p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="banner" style="background-color: white;">
+        <p style="text-align: center;font-weight: bold;font-size: 30px;">About Us</p>
+        <p style="text-align: center;font-weight: bold;font-size: 20px; color: gray;">Order now and appreciate the beauty of nature</p>
+        <div class="About-us-1">
+          <div >
+          <img src="planticon.svg" alt="">
+        </div>
+          Large assortment
+        </div>
+        <div class="About-us-1">
+          <img src="" alt="">
+          Large assortment
+        </div>
+        <div class="About-us-2">
+          Large assortment
+        </div>
+      </div>
+      <div class="banner">
+        <p>Categories</p>
+      </div>
+      <div class="banner">
+        <p>What say?</p>
+      </div>
+    </div>
+    <footer class="footer">
+      <p>&copy; 2023 all Right Reserved Term of use  LowBoy</p>
+    </footer>
+  </div>
+</body>
+</html>
