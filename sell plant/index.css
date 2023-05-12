@@ -86,8 +86,27 @@ input[type=text] {
 .About-us-1 {
     float: left;
     width: 33%;
+    
 }
 .About-us-2 {
     float: left;
     width: 34%;
+}
+.a-u-image-1 {
+    position: relative;
+    margin-left: 25% ;
+}
+.a-u-image-2 {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.a-u-text-1 {
+    font-weight: bold;
+}
+.a-u-text-2 {
+    font-weight: bold;
+    width: 50%;
+    text-align: center;
+    color: gray;
 }
