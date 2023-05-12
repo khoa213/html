@@ -9,6 +9,29 @@
 .nav-link {
     text-decoration: none;
 }
+.banner, .article {
+    background-color: #7FFFD4;
+    height: 10em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding-bottom: 100px;
+  }
+  .banner1 {
+    background-color: #7FFFD4;
+    height: 10em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    height: 800px;
+  }
+  .banner2 {
+    background-color: #7FFFD4;
+    height: 10em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+    padding-bottom: 100px;
+    height: 250px;
+  }  
 .banner-left {
     float: left;
     width: 50%;
@@ -69,6 +92,7 @@ input[type=text] {
 .best-sell-left {
     float: left;
     width: 25%;
+    
 }
 .best-sell-right {
     float: left;
@@ -109,4 +133,136 @@ input[type=text] {
     width: 50%;
     text-align: center;
     color: gray;
+}
+.category-text-1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.category-text-2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: gray;
+}
+.category-1 {
+    float: left;
+    width: 33%;
+    
+}
+.category-2 {
+    float: left;
+    width: 34%;
+    
+}
+.category-image-1 {
+    width: 25%;
+    height: 50%;
+    margin-left: 20%;
+    
+}
+.category-image-2 {
+    width: 25%;
+    height: 50%;
+    margin-left: 20%;
+}
+.category-text-image {
+    margin-left: 25%;
+    font-weight: bold;
+}
+.card {
+    float: left;
+    width: 50%;
+    
+}
+.card-info {
+    background-color: aquamarine;
+    margin-left: 5%;
+    margin-right: 2%;
+    height: 200px;
+    
+}
+.card-info-2 {
+    background-color: aquamarine;
+    margin-left: 2%;
+    margin-right: 5%;
+    height: 200px;
+}
+.footer1 {
+    float: left;
+    width: 50%;
+}
+.footer1-text {
+    margin-left: 0%;
+    height: 160px;
+    background-color: aquamarine;
+}
+.media {
+    margin-right: 20px;
+    
+}
+th {
+    padding: 10px;
+}
+td {
+    padding: 10px;
+}
+@media only screen and (max-width:768px) {
+    .banner-left {
+        float: left;
+        width: 100%;
+    }
+    .banner-left::after {
+        content: "";
+        clear: both;
+    }
+    .banner-right {
+        display: none;
+    }
+    .best-sell-left {
+        float: left;
+        width: 34%;
+    }
+    .best-sell-right {
+        float: left;
+        width: 66%;
+    }
+    .b-s-r-1 {
+        float: left;
+        width: 50%;
+    }
+    .b-s-r-2 {
+        display: none;
+    }
+    .b-s-r-i {
+        width: 100px;
+        height: 100px;
+    }
+    .banner1 {
+        background-color: #7FFFD4;
+        height: 10em;
+        margin-bottom: 1em;
+        border-radius: 10px;
+        padding-bottom: 100px;
+        height: 200px;
+      }
+      .banner2 {
+        background-color: #7FFFD4;
+        height: 10em;
+        margin-bottom: 1em;
+        border-radius: 10px;
+        padding-bottom: 100px;
+        height: 300px;
+      }  
+      .category-text-1 {
+        
+        font-weight: bold;
+        font-size: 20px;
+    }
+    .category-text-2 {
+        
+        font-weight: bold;
+        font-size: 20px;
+        color: gray;
+    }
 }
