@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    .column {
+  float: left;
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+    .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Devera Store</h1>
+        <span style="padding-right: 10px;"><a href="#" >Hotest</a></span>
+        <span style="padding-right: 10px;"><a href="#">Best seller</a></span>
+        <span style="padding-right: 10px;"><a href="#">Trending</a></span>
+        <span style="padding-right: 10px;"><a href="#">Sport</a></span>
+        <span style="padding-right: 10px;"><a href="#">Music</a></span>
+    </header>
+    <section>
+        <h1>Add Product</h1>
+        <div class="row">
+            <div class="column">
+                <form action="#">
+                    <label for="">Product name</label>
+                    <input type="text" placeholder="name">
+                </form>
+                <br>
+                <form action="#">
+                    <label for="">Price</label>
+                    <input type="text" value="12$" >
+                </form>
+                <p>Description</p>
+                <textarea rows="4" cols="50" name="comment" form="usrform">
+                Description</textarea>
+                <br>
+                <span>Image</span>
+                <img src="doraemon-phan-42-ra-rap-tai-viet-nam-cuoi-thang-5-070833336.jpg" alt="doraemon" style="width: 200px; height: 200px; padding-bottom: 20px;">
+                
+                <form action="#">
+                    <input type="radio" name="country" value="VIETNAM">
+                    <label for="">Vietnam</label><br>
+                    <input type="radio" name="country" value="VIETNAM">
+                    <label for="">China</label><br>
+                </form>
+            </div>
+            <div class="column">
+                <form action="#">
+                    <label for="category">Category</label>
+                    <select name="" id="">
+                        <option value="">Book</option>
+                        <option value="">Magazine</option>
+                    </select>
+                </form>
+                <br>
+                <br>
+                <form action="#">
+                    <input type="checkbox">
+                    <label for="">Free ship</label>
+                </form>
+                <br>
+                <br>
+                <br>
+                <br>
+                <form action="#">
+                    <input type="submit" value="create">
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <b><p style="text-align: center;">Devera 2022</p></b> 
+    </footer>
+</body>
+</html>

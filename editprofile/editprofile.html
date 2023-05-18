@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            /*
+            .grid-container{
+                display: grid;
+                grid-template-columns: 5% 20% 75%;
+            }
+            */
+            .left-side-bar {
+                background-color: rgb(223, 150, 14);
+                float: left;
+                width: 5%;
+            }
+            .in-lsb {
+                margin: 20px;
+                
+            }
+            .middle-bar {
+                font-size: 20px;
+                border-right-style: solid;
+                text-align: center;
+                float: left;
+                width: 20%;
+            }
+            .in-mb {
+                margin: 30px;
+            }
+            .edit {
+                float: left;
+                width: 75%;
+            }
+            .profile {
+                margin: 20px;
+            }
+            .profile button {
+                padding: 15px 30px;
+                margin-right: 50px;
+                cursor: pointer;
+                width: 100px;
+            }
+            .profile button:hover {
+                width: 150px;
+            }
+            .scroll {
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 9999;
+                cursor: pointer;
+            }
+            .fname {
+                display: inline-block;
+            }
+            .lname {
+                margin-left: 5%;
+                display: inline-block;
+            }
+            .change-text {
+                font-weight: bold;
+            }
+            
+            @media  screen and (max-width: 768px) {
+                .left-side-bar  {
+                    float: left;
+                    width: 25%;
+                }
+                .edit {
+                    float: left;
+                    width: 75%;
+                }
+                .middle-bar {
+                    display: none;
+                }
+                .fname {
+                    display: block;
+                }
+                .lname {
+                    display: block;
+                    margin-left: 0;
+                }
+            }
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="grid-container">
+            <div class="left-side-bar">
+                <div class="in-lsb"><img src="logo@0 1.svg" alt=""></div>
+                <div class="in-lsb"><img src="Vector.svg" alt=""></div>
+                <div class="in-lsb"><img src="bell.jpg" alt=""></div>
+                <div class="in-lsb"><img src="board.jpg" alt=""></div>
+                <div class="in-lsb"><img src="chart.jpg" alt=""></div>
+                <div class="in-lsb"><img src="person.jpg" alt=""></div>
+                <div class="in-lsb" style="margin-top: 200px;cursor: pointer;"><img src="settings.svg" alt="" onclick="openSetting()"></div>
+            </div>
+            <div class="middle-bar" id="setting">
+                <div class="in-mb">
+                <img src="arrow.jpg" alt="" style="margin-right: 10px;cursor: pointer;"  onclick="closeSetting()">
+                <span><b> Settings</b></span>
+                </div>
+                <div class="in-mb">
+                    <span style="cursor: pointer;" class="select "  > Edit profile</span>
+                </div>
+                <div class="in-mb">
+                    <span style="cursor: pointer;"  class="select" > Notification</span>
+                </div>
+                <div class="in-mb">
+                    <span style="cursor: pointer;"  class="select" > Security</span>
+                </div>
+                <div class="in-mb">
+                    <span style="cursor: pointer;" class="select"  > Appearance</span>
+                </div>
+                <div class="in-mb">
+                    <span style="cursor: pointer;" class="select" > Help</span>
+                </div>
+            </div>
+            <div class="edit" style="padding-top: 30px;">
+                <div>
+                <span style="margin: 50px;">
+                    <b style="font-size: 20px;">Edit profile</b>
+                </span>
+                <span style="margin-left: 10%;">
+                    <img src="logo@0 1.svg" alt="">
+                </span>
+            </div>
+            <div class="profile" >
+                
+                    <span class="fname" style="margin-right: 5%;">
+                        <form action="#">
+                    <label for="">First name</label><br>
+                    <input type="text" class="data">
+                </form>
+                </span>
+                    <span class="lname" >
+                        <form action="#">
+                    <label for="">Last name</label><br>
+                    <input type="text" class="data">
+                </form>
+                </span>
+                
+            </div>
+            <div class="profile">
+                <form id="form-edit-profile" action="#">
+                    <label for="">Email</label><br>
+                    <input type="text" class="data" id="email" onchange="validateEmail()">
+                </form>
+            </div>
+            <div class="profile">
+                <form action="#">
+                    <label for="">Address</label><br>
+                    <input type="text" class="data">
+                </form>
+            </div>
+            <div class="profile">
+                <form action="#">
+                    <label for="">Contact number</label><br>
+                    <input type="text" class="data">
+                </form>
+            </div>
+            <div class="profile">
+                <form action="#">
+                    <label for="">City</label><br>
+                    <select name="city" id="">
+                        <option value="">HCMC</option>
+                        <option value="">HA NOI</option>
+                    </select>
+                </form>
+            </div>
+            <div class="profile">
+                <button  style="color: orange;" onclick="deleteData()">Cancel</button>
+                <button style="color: white; background-color: orange;" onclick="checkInfo()">Save</button>
+            </div>
+            </div>
+        </div>
+        
+        <button class="scroll">Scroll to top</button>
+        <script src="editprofile.js"></script>
+    </body>
+</html>

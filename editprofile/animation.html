@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            img {
+                width: 200px;
+                height: 200px;
+                animation-name: appear;
+                animation-duration: 10s;
+                animation-iteration-count: infinite ;
+            }
+            @keyframes appear {
+                from {opacity: 0;}
+                to {opacity: 1;}
+            }
+            .circle {
+                height: 50px;
+                width: 50px;
+                background-color: red;
+                border-radius: 50%;
+                animation-name: rotation;
+                animation-iteration-count: infinite ;
+                animation-duration: 2s;
+            }
+            @keyframes rotation {
+                0% {
+                    transform: rotate3d(0,1,0, 0deg);
+                }
+                50% {
+                    transform: rotate3d(0,1,0, 180deg);
+                }
+                100% {
+                    transform: rotate3d(0,1,0, 360deg);
+                } 
+            }
+        </style>
+    </head>
+    <body>
+       <img src="doraemon-phan-42-ra-rap-tai-viet-nam-cuoi-thang-5-070833336.jpg" alt=""> 
+       <div class="circle"></div>
+    </body>
+</html>
