@@ -55,4 +55,10 @@ validateEmail = () => {
         alert("invalid email address");
     }
 }
+let  logOut = document.querySelector("#log-out");
+logOut.addEventListener("click",(e)=>{
+    e.preventDefault();
+    localStorage.removeItem("data");
+    window.open("formlogin.html");
+})
 //document.getElementById("edit-profile-form").reset();
